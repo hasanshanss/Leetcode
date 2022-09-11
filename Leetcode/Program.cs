@@ -3,4 +3,4 @@ using EasyCollection.Tasks.IntegerTasks;
 using EasyCollection.Tasks.StringTasks;
 
 
-new FirstUniqueCharTask("leetcode").Do();
+new ValidAnagramTask("leetcode", "deocetel").Do();

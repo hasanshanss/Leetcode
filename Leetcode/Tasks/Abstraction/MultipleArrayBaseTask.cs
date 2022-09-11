@@ -49,6 +49,16 @@ namespace EasyCollection.Tasks.Abstraction
 
     internal class MultipleArrayBaseTaskParams<INPUT_TYPE> : ArrayBaseTaskParams<INPUT_TYPE>
     {
+        public MultipleArrayBaseTaskParams()
+        {
+            Input = new List<INPUT_TYPE[]>();
+        }
+
+        public MultipleArrayBaseTaskParams(List<INPUT_TYPE[]> input)
+        {
+            Input = input;
+        }
+
         public new List<INPUT_TYPE[]> Input { get; set; }
     }
 }
