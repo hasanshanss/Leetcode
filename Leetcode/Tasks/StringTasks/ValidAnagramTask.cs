@@ -36,7 +36,6 @@ namespace EasyCollection.Tasks.StringTasks
             return charMap.All(c => c == 0);
 
         }
-
         private bool LengthsAreEqual() => word1.Length == word2.Length;
     }
 }
