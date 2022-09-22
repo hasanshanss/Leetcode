@@ -1,4 +1,4 @@
 ﻿using EasyCollection.Tasks.StringTasks;
 
 
-new ValidPalindromeTask("race a car").Do();
+new StringToIntegerTask("-151").Do();
