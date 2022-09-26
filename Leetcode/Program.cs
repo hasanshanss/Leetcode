@@ -1,4 +1,4 @@
 ﻿using EasyCollection.Tasks.StringTasks;
 
 
-new StringToIntegerTask("-151").Do();
+new LongestCommonPrefixTask(new string[] {"flower", "flow", "flight"}).Do();
