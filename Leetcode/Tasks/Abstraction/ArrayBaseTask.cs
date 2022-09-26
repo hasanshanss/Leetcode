@@ -11,11 +11,6 @@ namespace EasyCollection.Tasks.Abstraction
     {
         protected ArrayBaseTaskParams<INPUT_TYPE> arrayBaseTaskParams;
 
-        protected ArrayBaseTask(ArrayBaseTaskParams<INPUT_TYPE> arrayBaseTaskParams) : base(arrayBaseTaskParams)
-        {
-            this.arrayBaseTaskParams = arrayBaseTaskParams;
-        }
-
         protected ArrayBaseTask()
         {
             arrayBaseTaskParams = new ArrayBaseTaskParams<INPUT_TYPE>();

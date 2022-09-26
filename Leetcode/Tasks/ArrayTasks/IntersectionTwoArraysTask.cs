@@ -8,7 +8,7 @@ namespace EasyCollection.Tasks.ArrayTasks
         private readonly Dictionary<int, int> numberMap;
         private readonly List<int> resultList;
 
-        public IntersectionTwoArraysTask(List<int[]> inputArrayList) : base(inputArrayList)
+        public IntersectionTwoArraysTask(int[] array1, int[] array2) : base(new List<int[]> { array1, array2})
         {
             numberMap = new Dictionary<int, int>();
             resultList = new List<int>();

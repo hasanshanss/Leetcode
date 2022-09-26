@@ -7,11 +7,7 @@ namespace EasyCollection.Tasks.Abstraction
         : BaseTask<INPUT_TYPE, RETURN_TYPE>
     {
         protected MultipleArrayBaseTaskParams<INPUT_TYPE> multipleArrayBaseTaskParams;
-        protected MultipleArrayBaseTask(MultipleArrayBaseTaskParams<INPUT_TYPE> multipleArrayBaseTaskParams) : base(multipleArrayBaseTaskParams)
-        {
-            this.multipleArrayBaseTaskParams = multipleArrayBaseTaskParams;
-        }
-
+       
         protected MultipleArrayBaseTask()
         {
             this.multipleArrayBaseTaskParams = new MultipleArrayBaseTaskParams<INPUT_TYPE>();

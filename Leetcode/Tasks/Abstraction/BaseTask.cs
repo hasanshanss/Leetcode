@@ -14,11 +14,6 @@ namespace EasyCollection.Tasks.Abstraction
         protected RETURN_TYPE result;
         protected abstract RETURN_TYPE Solve();
 
-        protected BaseTask(BaseTaskParams<INPUT_TYPE> baseTaskParams)
-        {
-            this.baseTaskParams = baseTaskParams;
-        }
-
         public BaseTask()
         {
             baseTaskParams = new BaseTaskParams<INPUT_TYPE>();

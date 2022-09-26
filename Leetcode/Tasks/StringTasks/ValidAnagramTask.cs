@@ -14,12 +14,10 @@ namespace EasyCollection.Tasks.StringTasks
         private char[] word1, word2;
         private int[] charMap = new int[26];
         
-        public ValidAnagramTask(string s1, string s2) : base()
+        public ValidAnagramTask(string s1, string s2) : base(new List<char[]> { s1.ToCharArray(), s2.ToCharArray()})
         {
-            word1 = s1.ToCharArray();
-            word2 = s2.ToCharArray();
-            multipleArrayBaseTaskParams.Input.Add(word1);
-            multipleArrayBaseTaskParams.Input.Add(word2);
+            word1 = multipleArrayBaseTaskParams.Input[0];
+            word2 = multipleArrayBaseTaskParams.Input[1];
         }
 
         protected override bool Solve()

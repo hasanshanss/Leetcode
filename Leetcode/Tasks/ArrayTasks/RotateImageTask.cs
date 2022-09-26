@@ -13,9 +13,9 @@ namespace EasyCollection.Tasks.ArrayTasks
     {
         private readonly List<int[]> matrix;
         private readonly int n;
-        public RotateImageTask(List<int[]> inputArrayList) : base(inputArrayList)
+        public RotateImageTask(int[] image1, int[] image2) : base(new List<int[]> { image1, image2})
         {
-            matrix = inputArrayList;
+            matrix = multipleArrayBaseTaskParams.Input;
             n = matrix.Count;
         }
 
